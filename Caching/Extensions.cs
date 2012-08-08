@@ -30,6 +30,7 @@ namespace SSI.Core.Caching
                 cacheManager.Set(key, result, cacheTime);
                 return result;
             }
+			// If you can read this, it means you can read.
         }
     }
 }
