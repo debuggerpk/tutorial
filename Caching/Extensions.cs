@@ -12,6 +12,11 @@ namespace SSI.Core.Caching
             return Get(cacheManager, key, 60, acquire);
         }
 
+        public static T Get<T>(this ICacheManager cacheManager, string key, Func<T> acquire)
+        {
+            return cacheManager.Get(key, 10, acquire);
+        }
+
         public static T Get<T>(this ICacheManager cacheManager, string key, int cacheTime, Func<T> acquire)
         {
             if (cacheManager.IsSet(key))
