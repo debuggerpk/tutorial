@@ -12,6 +12,14 @@ namespace SSI.Core.Caching
             return Get(cacheManager, key, 60, acquire);
         }
 
+        /// <summary>
+        /// Change to the branch test
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="cacheManager"></param>
+        /// <param name="key"></param>
+        /// <param name="acquire"></param>
+        /// <returns></returns>
         public static T Get<T>(this ICacheManager cacheManager, string key, Func<T> acquire)
         {
             return cacheManager.Get(key, 10, acquire);
