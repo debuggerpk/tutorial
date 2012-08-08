@@ -15,6 +15,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+*.aspx
 
 # External tool builders
 .externalToolBuilders/
