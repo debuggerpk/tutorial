@@ -14,6 +14,7 @@ namespace SSI.Core.Caching
 
         /// <summary>
         /// Change to the branch test
+        /// Redoing a change in the test branch
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="cacheManager"></param>
